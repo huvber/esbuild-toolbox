@@ -4,6 +4,7 @@
   "description": "A plugin to detect circular dependencies using dpdm",
   "type": "module",
   "main": "plugin.js",
+  "private": false,
   "scripts": {
     "test": "node --test \"**/*.spec.js\"",
     "dpdm": "dpdm",
