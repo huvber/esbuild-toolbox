@@ -9,6 +9,9 @@
     "dpdm": "dpdm",
     "test:build": "node _test-folder_/esbuild-test.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "esbuild": "^0.28.0"
   },
