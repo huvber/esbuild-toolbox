@@ -1,5 +1,5 @@
 {
-  "name": "esbuild-kit",
+  "name": "esbuild-toolbox",
   "version": "0.0.1",
   "description": "A collection of essential and useful esbuild plugins",
   "scripts": {
