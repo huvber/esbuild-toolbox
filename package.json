@@ -1,0 +1,14 @@
+{
+  "name": "esbuild-kit",
+  "version": "0.0.1",
+  "description": "A collection of essential and useful esbuild plugins",
+  "scripts": {
+    "changeset": "changeset"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
+  }
+}

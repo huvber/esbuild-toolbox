@@ -1,0 +1,9 @@
+node_modules
+.changeset/README.md
+dist
+**/dist
+_old
+.DS_Store
+
+# alias deprecated since built-in in esbuild
+packages/alias
