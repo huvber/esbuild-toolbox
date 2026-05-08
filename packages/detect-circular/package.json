@@ -12,6 +12,15 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "plugin.js",
+    "plugin.spec.js",
+    "package.json",
+    "README.md",
+    "LICENSE.md",
+    "CHANGELOG.md",
+    "_test-folder_/"
+  ],
   "devDependencies": {
     "esbuild": "^0.28.0"
   },

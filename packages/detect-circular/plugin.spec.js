@@ -1,6 +1,5 @@
 import fs from "node:fs/promises";
-import { fileURLToPath } from "node:url";
-import { test, describe } from "node:test";
+import { test, after, describe } from "node:test";
 import { dirname } from "node:path";
 import assert from "node:assert";
 
@@ -8,10 +7,11 @@ import { build } from "esbuild";
 
 import { detectCircularPlugin } from "./plugin.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
 describe("detectCircularPlugin", async () => {
+  after(async () => {
+    await fs.rm("./dist", { recursive: true, force: true });
+  });
+
   test("should detect circular dependencies", async () => {
     const result = await build({
       entryPoints: ["./_test-folder_/index.js"],
