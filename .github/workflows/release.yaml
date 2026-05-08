@@ -7,6 +7,10 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+permissions:
+  contents: write # Required to push commits/tags
+  pull-requests: write # Required for Changesets to create PRs
+
 jobs:
   release:
     name: Release
@@ -35,3 +39,4 @@ jobs:
           publish: pnpm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
