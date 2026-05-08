@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "A collection of essential and useful esbuild plugins",
   "scripts": {
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "release": "pnpm publish -r --filter \"./packages/**\" --access public"
   },
   "keywords": [],
   "author": "",
