@@ -4,7 +4,8 @@
   "description": "A collection of essential and useful esbuild plugins",
   "scripts": {
     "changeset": "changeset",
-    "release": "pnpm publish -r --filter \"./packages/**\" --access public"
+    "release": "pnpm publish -r --filter \"./packages/**\" --access public",
+    "cs": "changeset"
   },
   "keywords": [],
   "author": "",

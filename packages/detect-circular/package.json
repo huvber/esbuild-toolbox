@@ -21,6 +21,7 @@
     "CHANGELOG.md",
     "_test-folder_/"
   ],
+  "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.28.0"
   },
