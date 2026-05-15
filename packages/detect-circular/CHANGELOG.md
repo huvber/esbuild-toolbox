@@ -1,5 +1,11 @@
 # @esbuild-kit/detect-circular-plugin
 
+## 0.4.0
+
+### Minor Changes
+
+- e3977d6: add keywords
+
 ## 0.3.0
 
 ### Minor Changes
