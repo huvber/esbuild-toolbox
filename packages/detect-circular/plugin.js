@@ -1,6 +1,5 @@
-import path from "node:path";
-
 import { parseDependencyTree, parseCircular, prettyCircular } from "dpdm";
+import { name } from "./package.json" with {type: 'json'};
 
 const defaultOptions = {
   logLevel: "error",
@@ -21,7 +20,7 @@ export function detectCircularPlugin(options) {
   const { logLevel, exclude } = { ...defaultOptions, ...options };
 
   return {
-    name: "circular-dependencies",
+    name,
     setup(build) {
       const { entryPoints, tsconfig, absWorkingDir } = build.initialOptions;
 

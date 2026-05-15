@@ -5,9 +5,7 @@
   "type": "module",
   "main": "plugin.js",
   "scripts": {
-    "test": "node --test \"**/*.spec.js\"",
-    "dpdm": "dpdm",
-    "test:build": "node _test-folder_/esbuild-test.js"
+    "test": "node --test \"**/*.spec.js\""
   },
   "publishConfig": {
     "access": "public"
