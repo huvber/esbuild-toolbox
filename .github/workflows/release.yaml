@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js 25
         uses: actions/setup-node@v3
@@ -37,6 +39,6 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: pnpm release
+          createGithubReleases: true
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

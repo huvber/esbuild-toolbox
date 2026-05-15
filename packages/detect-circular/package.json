@@ -19,6 +19,13 @@
     "CHANGELOG.md",
     "_test-folder_/"
   ],
+  "keywords": [
+    "esbuild",
+    "dpdm",
+    "circular dependencies",
+    "build",
+    "code quality"
+  ],
   "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.28.0"
