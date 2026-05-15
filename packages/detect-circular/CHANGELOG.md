@@ -1,5 +1,12 @@
 # @esbuild-kit/detect-circular-plugin
 
+## 0.3.0
+
+### Minor Changes
+
+- 1d8350e: add license
+- 721b337: Cleanup plugin infos
+
 ## 0.2.0
 
 ### Minor Changes
