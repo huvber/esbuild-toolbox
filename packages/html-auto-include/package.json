@@ -8,6 +8,7 @@
     "url": "https://github.com/huvber/esbuild-toolbox.git",
     "directory": "packages/html-auto-include"
   },
+  "license": "MIT",
   "scripts": {
     "test": "node --test \"**/*.spec.js\""
   },
@@ -18,6 +19,13 @@
   "devDependencies": {
     "esbuild": "^0.28.0"
   },
+  "keywords": [
+    "esbuild",
+    "happy-dom",
+    "html",
+    "build",
+    "spa"
+  ],
   "dependencies": {
     "happy-dom": "^20.10.2"
   }
