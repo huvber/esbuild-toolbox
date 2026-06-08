@@ -13,7 +13,7 @@ const defaultOptions = {
  * It return a warning or error message if circular dependencies are detected.
  *
  * @param {Object}              [options]  - Options for the plugin.
- * @param {'warn' | 'error'} [options.logLevel="errors"] - The log level to use when circular dependencies are detected.
+ * @param {'warn' | 'error'}    [options.logLevel="errors"] - The log level to use when circular dependencies are detected.
  * @param {RegExp}              [options.exclude] - A regular expression uses to exclude module names from circular dependency detection.
  */
 export function detectCircularPlugin(options) {

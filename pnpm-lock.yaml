@@ -28,6 +28,12 @@ importers:
         specifier: ^0.28.0
         version: 0.28.0
 
+  packages/html-auto-include:
+    devDependencies:
+      esbuild:
+        specifier: ^0.28.0
+        version: 0.28.0
+
 packages:
 
   '@babel/runtime@7.29.2':
