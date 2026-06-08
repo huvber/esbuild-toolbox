@@ -1,5 +1,11 @@
 # @esbuild-kit/detect-circular-plugin
 
+## 0.5.0
+
+### Minor Changes
+
+- dcabf88: Adjust docs
+
 ## 0.4.0
 
 ### Minor Changes
