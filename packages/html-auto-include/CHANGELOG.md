@@ -1,5 +1,11 @@
 # @esbuild-toolbox/html-auto-include
 
+## 0.3.0
+
+### Minor Changes
+
+- 11eb013: add esbuild-plugin keyword for better discoverability
+
 ## 0.2.0
 
 ### Minor Changes

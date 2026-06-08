@@ -1,5 +1,11 @@
 # @esbuild-kit/detect-circular-plugin
 
+## 0.6.0
+
+### Minor Changes
+
+- 11eb013: add esbuild-plugin keyword for better discoverability
+
 ## 0.5.2
 
 ### Patch Changes
