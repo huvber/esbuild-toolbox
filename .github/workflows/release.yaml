@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - ci-*
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -13,9 +14,36 @@ permissions:
   id-token: write
 
 jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 25
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: run tests
+        run: pnpm -r test
+
   release:
     name: Release
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
