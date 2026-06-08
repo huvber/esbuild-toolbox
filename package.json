@@ -10,6 +10,7 @@
     "changeset": "changeset",
     "release": "changeset publish",
     "release:create": "pnpm publish -r --filter \"@1\" --access public",
+    "publish:first": "node scripts/publish-first.js",
     "cs": "changeset"
   },
   "keywords": [],
