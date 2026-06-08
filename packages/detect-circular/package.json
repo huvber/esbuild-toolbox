@@ -26,6 +26,7 @@
     "_test-folder_/"
   ],
   "keywords": [
+    "esbuild-plugin",
     "esbuild",
     "dpdm",
     "circular dependencies",

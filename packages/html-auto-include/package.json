@@ -20,6 +20,7 @@
     "esbuild": "^0.28.0"
   },
   "keywords": [
+    "esbuild-plugin",
     "esbuild",
     "happy-dom",
     "html",
