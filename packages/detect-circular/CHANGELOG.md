@@ -1,5 +1,11 @@
 # @esbuild-kit/detect-circular-plugin
 
+## 0.5.2
+
+### Patch Changes
+
+- 2f45f31: fix name extraction from package.json
+
 ## 0.5.1
 
 ### Patch Changes
