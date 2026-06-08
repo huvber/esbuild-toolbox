@@ -2,13 +2,19 @@
   "name": "@esbuild-toolbox/detect-circular-plugin",
   "version": "0.5.0",
   "description": "A plugin to detect circular dependencies using dpdm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huvber/esbuild-toolbox.git",
+    "directory": "packages/detect-circular"
+  },
   "type": "module",
   "main": "plugin.js",
   "scripts": {
     "test": "node --test \"**/*.spec.js\""
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "files": [
     "plugin.js",
