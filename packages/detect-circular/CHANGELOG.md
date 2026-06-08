@@ -1,5 +1,11 @@
 # @esbuild-kit/detect-circular-plugin
 
+## 0.5.1
+
+### Patch Changes
+
+- 18cbef7: add readme options example
+
 ## 0.5.0
 
 ### Minor Changes
