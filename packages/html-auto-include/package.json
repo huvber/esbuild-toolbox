@@ -1,6 +1,6 @@
 {
   "name": "@esbuild-toolbox/html-auto-include",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A utility that include automatically entrypoints reference to HTML passed.",
   "type": "module",
   "repository": {
