@@ -1,5 +1,5 @@
 import { parseDependencyTree, parseCircular, prettyCircular } from "dpdm";
-import { name } from "./package.json" with {type: 'json'};
+import pkg from "./package.json" with { type: 'json' };
 
 const defaultOptions = {
   logLevel: "error",
@@ -20,7 +20,7 @@ export function detectCircularPlugin(options) {
   const { logLevel, exclude } = { ...defaultOptions, ...options };
 
   return {
-    name,
+    name: pkg.name,
     setup(build) {
       const { entryPoints, tsconfig, absWorkingDir } = build.initialOptions;
 

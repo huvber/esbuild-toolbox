@@ -1,6 +1,5 @@
 import fs from "node:fs/promises";
 import { test, after, describe } from "node:test";
-import { dirname } from "node:path";
 import assert from "node:assert";
 
 import { build } from "esbuild";
