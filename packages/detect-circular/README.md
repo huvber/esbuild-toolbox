@@ -30,6 +30,16 @@ esbuild.build({
 });
 ```
 
+or with options
+
+```js
+import { detectCircular } from '@esbuild-toolbox/detect-circular';
+
+esbuild.build({
+  plugins: [detectCircular({ logLevel: 'warn' })],
+});
+```
+
 ## Options
 
 - `logLevel`: The log level of the detected circular dependencies. Defaults to `'error'`.

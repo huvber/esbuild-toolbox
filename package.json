@@ -8,7 +8,7 @@
   },
   "scripts": {
     "changeset": "changeset",
-    "release": "pnpm publish -r --filter \"./packages/**\" --access public --provenance",
+    "release": "changeset publish --provenance",
     "release:create": "pnpm publish -r --filter \"@1\" --access public",
     "cs": "changeset"
   },
