@@ -1,6 +1,6 @@
 {
   "name": "@esbuild-toolbox/detect-circular-plugin",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "A plugin to detect circular dependencies using dpdm",
   "repository": {
     "type": "git",
