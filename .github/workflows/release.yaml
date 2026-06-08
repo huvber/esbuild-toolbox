@@ -8,8 +8,9 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 permissions:
-  contents: write # Required to push commits/tags
-  pull-requests: write # Required for Changesets to create PRs
+  contents: write
+  pull-requests: write
+  id-token: write
 
 jobs:
   release:
@@ -41,4 +42,4 @@ jobs:
           publish: pnpm release
           createGithubReleases: true
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ""
